@@ -1,0 +1,33 @@
+.paged {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.paged button {
+  color: black;
+  /* float: left; */
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid rgb(11, 11, 11);
+  border-radius: 5px;
+  margin: 0 4px;
+}
+
+.paged button.hovered {
+  background-color: #fd684d;
+  color: white;
+  border: 1px solid #777db8;
+}
+
+.paged button:hover:not(.hovered) {
+  background-color: #fd684d;
+  color: white;
+}
+
+.active {
+  background-color: red;
+}
